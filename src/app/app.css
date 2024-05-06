@@ -1,0 +1,19 @@
+.container {
+    width: 1017px;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 58px 1fr 38px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+footer {
+    align-self: center;
+    text-align: center;
+    font-size: 12px;
+}
