@@ -1,5 +1,5 @@
-import html from "./counterparty_modal.html";
-import './counterparty_modal.css'
+import html from "./counterparty-modal.html";
+import './counterparty-modal.css'
 
 const counterpartyModal = document.getElementById('counterparty-modal');
 counterpartyModal.innerHTML = html;
