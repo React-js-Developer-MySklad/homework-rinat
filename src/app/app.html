@@ -3,8 +3,7 @@
         <div class="logo">
             <img src="./assets/header-logo.svg" alt="Site logo">
         </div>
-        <button type="button" data-modal-target="counterparty-modal" data-modal-toggle="counterparty-modal"
-                class="px-5 py-2.5 text-sm font-medium text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <button type="button" class="regular-button" id="create-counterparty-button">
             <svg class="w-[20px] h-[20px] text-white me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                  fill="currentColor" viewBox="0 0 24 24">
                 <path fill-rule="evenodd"
@@ -14,7 +13,7 @@
                       d="M9 16a6 6 0 1 1 12 0 6 6 0 0 1-12 0Zm6-3a1 1 0 0 1 1 1v1h1a1 1 0 1 1 0 2h-1v1a1 1 0 1 1-2 0v-1h-1a1 1 0 1 1 0-2h1v-1a1 1 0 0 1 1-1Z"
                       clip-rule="evenodd"/>
             </svg>
-            Add Data
+            Добавить
         </button>
     </header>
     <div id="counterparty-table-container" class="relative overflow-x-auto">
@@ -24,6 +23,13 @@
     </footer>
 </div>
 <!-- modal -->
-<div id="counterparty-modal" tabindex="-1" aria-hidden="true"
-     class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+<div id="counterparty-card-modal"
+     tabindex="-1"
+     class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+     aria-hidden="true">
+</div>
+<div id="confirm-delete-modal"
+     tabindex="-1"
+     class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full"
+     aria-hidden="true">
 </div>

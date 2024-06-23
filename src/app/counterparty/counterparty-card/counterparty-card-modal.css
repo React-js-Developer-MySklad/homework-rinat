@@ -1,0 +1,93 @@
+.counterparty-card-modal {
+    @apply relative;
+    @apply p-4;
+    @apply w-full;
+    @apply max-w-2xl;
+    @apply h-full;
+    @apply md:h-auto;
+}
+
+.counterparty-card-modal-content {
+    @apply relative;
+    @apply p-4;
+    @apply bg-white;
+    @apply rounded-lg;
+    @apply shadow;
+    @apply dark:bg-gray-800;
+    @apply sm:p-5;
+}
+
+.counterparty-card-modal-content-header {
+    @apply flex;
+    @apply justify-between;
+    @apply items-center;
+    @apply pb-4;
+    @apply mb-4;
+    @apply rounded-t;
+    @apply border-b;
+    @apply sm:mb-5;
+    @apply dark:border-gray-600;
+}
+
+.counterparty-card-modal-content-header-text {
+    @apply text-lg;
+    @apply font-semibold;
+    @apply text-gray-900;
+    @apply dark:text-white;
+}
+
+.counterparty-card-modal-close-button {
+    @apply text-gray-400;
+    @apply bg-transparent;
+    @apply hover:bg-gray-200;
+    @apply hover:text-gray-900;
+    @apply rounded-lg;
+    @apply text-sm;
+    @apply p-1.5;
+    @apply ml-auto;
+    @apply inline-flex;
+    @apply items-center;
+    @apply dark:hover:bg-gray-600;
+    @apply dark:hover:text-white;
+}
+
+.counterparty-card-modal-form-label {
+    @apply block;
+    @apply mb-2;
+    @apply text-sm;
+    @apply font-medium;
+    @apply text-gray-900;
+    @apply dark:text-white;
+}
+
+.counterparty-card-modal-form-input {
+    @apply bg-gray-50;
+    @apply border;
+    @apply border-gray-300;
+    @apply text-gray-900;
+    @apply text-sm;
+    @apply rounded-lg;
+    @apply block;
+    @apply w-full;
+    @apply p-2.5;
+    @apply dark:bg-gray-700;
+    @apply dark:border-gray-600;
+    @apply dark:placeholder-gray-400;
+    @apply dark:text-white;
+}
+
+.counterparty-card-modal-form-textarea {
+    @apply block;
+    @apply p-2.5;
+    @apply w-full;
+    @apply text-sm;
+    @apply text-gray-900;
+    @apply bg-gray-50;
+    @apply rounded-lg;
+    @apply border;
+    @apply border-gray-300;
+    @apply dark:bg-gray-700;
+    @apply dark:border-gray-600;
+    @apply dark:placeholder-gray-400;
+    @apply dark:text-white;
+}

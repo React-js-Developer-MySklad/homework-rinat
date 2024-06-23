@@ -1,0 +1,51 @@
+.counterparty-table {
+    @apply w-full;
+    @apply text-sm;
+    @apply text-left;
+    @apply rtl:text-right;
+    @apply text-gray-500;
+    @apply dark:text-gray-400;
+}
+
+.counterparty-table-head {
+    @apply text-xs;
+    @apply text-gray-700;
+    @apply uppercase;
+    @apply bg-gray-50;
+    @apply dark:bg-gray-700;
+    @apply dark:text-gray-400;
+}
+
+.counterparty-table-head-cell {
+    @apply px-6 py-3;
+}
+
+.counterparty-table-row {
+    @apply bg-white;
+    @apply border-b;
+    @apply dark:bg-gray-800;
+    @apply dark:border-gray-700;
+}
+
+.counterparty-table-cell {
+    @apply px-6 py-4;
+}
+
+.counterparty-table-delete-button {
+    @apply px-3 py-2;
+    @apply text-xs;
+    @apply font-medium;
+    @apply text-center;
+    @apply inline-flex;
+    @apply items-center;
+    @apply text-white;
+    @apply bg-red-700;
+    @apply rounded-lg;
+    @apply hover:bg-red-800;
+    @apply focus:ring-4;
+    @apply focus:outline-none;
+    @apply focus:ring-red-300;
+    @apply dark:bg-red-600;
+    @apply dark:hover:bg-red-700;
+    @apply dark:focus:ring-red-800;
+}

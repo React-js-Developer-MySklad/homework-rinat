@@ -1,0 +1,56 @@
+<div class="counterparty-card-modal">
+    <!-- Modal content -->
+    <div class="counterparty-card-modal-content">
+        <!-- Modal header -->
+        <div class="counterparty-card-modal-content-header">
+            <h3 class="counterparty-card-modal-content-header-text">
+                Контрагент
+            </h3>
+            <button type="button" data-modal-toggle="counterparty-card-modal" class="counterparty-card-modal-close-button">
+                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z">
+                    </path>
+                </svg>
+                <span class="sr-only">Закрыть</span>
+            </button>
+        </div>
+        <!-- Modal body -->
+        <form action="#">
+            <div class="grid gap-4 mb-4 sm:grid-cols-2">
+                <div class="sm:col-span-2">
+                    <label for="name" class="counterparty-card-modal-form-label">Наименование</label>
+                    <input type="text" name="name" id="name"
+                           class="counterparty-card-modal-form-input focus:ring-primary-600 focus:border-primary-600 dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                           placeholder="Введите наименование контрагента" required="">
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="inn"
+                           class="counterparty-card-modal-form-label">ИНН</label>
+                    <input type="number" name="inn" id="inn"
+                           class="counterparty-card-modal-form-input focus:ring-primary-600 focus:border-primary-600 dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                           placeholder="Введите ИНН контрагента" required="">
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="kpp"
+                           class="counterparty-card-modal-form-label">КПП</label>
+                    <input type="number" name="kpp" id="kpp"
+                           class="counterparty-card-modal-form-input focus:ring-primary-600 focus:border-primary-600 dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                           placeholder="Введите КПП контрагента" required="">
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="address" class="counterparty-card-modal-form-label">Адрес</label>
+                    <textarea id="address" name="address" rows="4"
+                              class="counterparty-card-modal-form-textarea focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                              placeholder="Введите адрес контрагента"></textarea>
+                </div>
+            </div>
+            <button type="button" class="regular-button">
+                Сохранить
+            </button>
+            <button type="button" class="cancel-button">
+                Отменить
+            </button>
+        </form>
+    </div>
+</div>
