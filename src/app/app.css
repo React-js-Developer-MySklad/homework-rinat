@@ -17,3 +17,65 @@ footer {
     text-align: center;
     font-size: 12px;
 }
+
+.regular-button {
+    @apply px-5 py-2.5;
+    @apply text-sm;
+    @apply font-medium;
+    @apply text-white;
+    @apply inline-flex;
+    @apply items-center;
+    @apply bg-blue-700;
+    @apply hover:bg-blue-800;
+    @apply focus:ring-4;
+    @apply focus:outline-none;
+    @apply focus:ring-blue-300;
+    @apply rounded-lg;
+    @apply text-center;
+    @apply dark:bg-blue-600;
+    @apply dark:hover:bg-blue-700;
+    @apply dark:focus:ring-blue-800;
+}
+
+.danger-button {
+    @apply text-white;
+    @apply bg-red-600;
+    @apply hover:bg-red-800;
+    @apply focus:ring-4;
+    @apply focus:outline-none;
+    @apply focus:ring-red-300;
+    @apply dark:focus:ring-red-800;
+    @apply font-medium;
+    @apply rounded-lg;
+    @apply text-sm;
+    @apply inline-flex;
+    @apply items-center;
+    @apply px-5;
+    @apply py-2.5;
+    @apply text-center;
+}
+
+.cancel-button {
+    @apply py-2.5;
+    @apply px-5;
+    @apply ms-3;
+    @apply text-sm;
+    @apply font-medium;
+    @apply text-gray-900;
+    @apply focus:outline-none;
+    @apply bg-white;
+    @apply rounded-lg;
+    @apply border;
+    @apply border-gray-200;
+    @apply hover:bg-gray-100;
+    @apply hover:text-blue-700;
+    @apply focus:z-10;
+    @apply focus:ring-4;
+    @apply focus:ring-gray-100;
+    @apply dark:focus:ring-gray-700;
+    @apply dark:bg-gray-800;
+    @apply dark:text-gray-400;
+    @apply dark:border-gray-600;
+    @apply dark:hover:text-white;
+    @apply dark:hover:bg-gray-700;
+}

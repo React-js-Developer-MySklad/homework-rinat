@@ -1,0 +1,35 @@
+.confirm-delete-modal-wrapper {
+    @apply relative;
+    @apply p-4;
+    @apply w-full;
+    @apply max-w-md;
+    @apply max-h-full;
+}
+
+.confirm-delete-modal-container {
+    @apply relative;
+    @apply bg-white;
+    @apply rounded-lg;
+    @apply shadow;
+    @apply dark:bg-gray-700;
+}
+
+.confirm-delete-modal-close-button {
+    @apply absolute;
+    @apply top-3;
+    @apply end-2.5;
+    @apply text-gray-400;
+    @apply bg-transparent;
+    @apply hover:bg-gray-200;
+    @apply hover:text-gray-900;
+    @apply rounded-lg;
+    @apply text-sm;
+    @apply w-8;
+    @apply h-8;
+    @apply ms-auto;
+    @apply inline-flex;
+    @apply justify-center;
+    @apply items-center;
+    @apply dark:hover:bg-gray-600;
+    @apply dark:hover:text-white;
+}
