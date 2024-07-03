@@ -4,7 +4,8 @@ import './counterparty-table.css'
 import CounterpartyRow from "../common-components/counterparty-row/counterparty-row";
 import CounterpartyCell from "../common-components/counterparty-cell/counterparty-cell";
 import ConfirmDeleteModal from "../common-components/confirm-delete-modal/confirm-delete-modal";
-import {pubSub} from "../../app";
+import {counterparties, pubSub} from "../../app";
+import CounterpartyCardModal from "../counterparty-card/counterparty-card-modal";
 
 export default class CounterpartyTable {
 
@@ -32,6 +33,15 @@ export default class CounterpartyTable {
                 this.#cellTemplate.newTextCell(counterparty.address),
                 this.#cellTemplate.newObjectCell(this.#cloneDeleteButton(counterparty.id))
             );
+            row.addEventListener('dblclick', (event) => {
+                const modal = new CounterpartyCardModal(counterparties, counterparty.id);
+                modal.instance.show();
+                modal.instance.updateOnHide(() => {
+                    if (modal.isSaved) {
+                        pubSub.publish('render');
+                    }
+                })
+            });
             this.#tbody.appendChild(row);
         }
         this.#table.appendChild(this.#tbody);

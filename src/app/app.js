@@ -2,12 +2,11 @@ import html from "./app.html";
 import './app.css'
 import Counterparty from "./domain/counterparty";
 import PubSub from './infrastructure/pubsub';
-import Sequence from "./infrastructure/sequence";
 import CounterpartyTable from "./counterparty/counterparty-table/counterparty-table";
 import CounterpartyCardModal from "./counterparty/counterparty-card/counterparty-card-modal";
+import sequence from "./infrastructure/sequence";
 
 const pubSub = new PubSub();
-const sequence = new Sequence();
 
 document.getElementById('root').innerHTML = html;
 
@@ -20,8 +19,16 @@ const counterpartyTableContainer = document.getElementById('counterparty-table-c
 let counterpartiesTable = new CounterpartyTable(counterparties).render();
 counterpartyTableContainer.appendChild(counterpartiesTable);
 
-const counterpartyCardModal = new CounterpartyCardModal();
-// todo: implement add/edit counterparty
+const createCounterpartyButton = document.getElementById('create-counterparty-button');
+createCounterpartyButton.addEventListener('click', () => {
+    const counterpartyCardModal = new CounterpartyCardModal(counterparties);
+    counterpartyCardModal.instance.show();
+    counterpartyCardModal.instance.updateOnHide(() => {
+        if (counterpartyCardModal.isSaved) {
+            pubSub.publish('render');
+        }
+    })
+});
 
 pubSub.subscribe((eventType) => {
     if (eventType === 'render') {
