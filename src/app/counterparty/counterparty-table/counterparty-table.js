@@ -5,7 +5,7 @@ import CounterpartyRow from "../common-components/counterparty-row/counterparty-
 import CounterpartyCell from "../common-components/counterparty-cell/counterparty-cell";
 import ConfirmDeleteModal from "../common-components/confirm-delete-modal/confirm-delete-modal";
 import {counterparties, pubSub} from "../../app";
-import CounterpartyCardModal from "../counterparty-card/counterparty-card-modal";
+import CounterpartyCardModal from "../counterparty-card-modal/counterparty-card-modal";
 
 export default class CounterpartyTable {
 

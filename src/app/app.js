@@ -3,7 +3,7 @@ import './app.css'
 import Counterparty from "./domain/counterparty";
 import PubSub from './infrastructure/pubsub';
 import CounterpartyTable from "./counterparty/counterparty-table/counterparty-table";
-import CounterpartyCardModal from "./counterparty/counterparty-card/counterparty-card-modal";
+import CounterpartyCardModal from "./counterparty/counterparty-card-modal/counterparty-card-modal";
 import sequence from "./infrastructure/sequence";
 
 const pubSub = new PubSub();
